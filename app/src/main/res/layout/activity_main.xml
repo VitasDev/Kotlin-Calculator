@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/firstnumber"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculator"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="First number"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/secondnumber"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstnumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Second number"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/secondnumber"
+        android:layout_marginTop="125dp"/>
+
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="+"
+        android:layout_toRightOf="@+id/firstnumber"
+        android:layout_toEndOf="@+id/firstnumber"
+        android:layout_below="@+id/calculator"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="-"
+        android:layout_toRightOf="@+id/btnPlus"
+        android:layout_toEndOf="@+id/btnPlus"
+        android:layout_below="@+id/calculator"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="*"
+        android:layout_toRightOf="@+id/secondnumber"
+        android:layout_toEndOf="@+id/secondnumber"
+        android:layout_below="@+id/btnPlus"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp" />
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="/"
+        android:layout_toRightOf="@+id/btnMultiply"
+        android:layout_toEndOf="@+id/btnMultiply"
+        android:layout_below="@+id/btnMinus"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp" />
+
+    <Button
+        android:id="@+id/btnPercent"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="%"
+        android:layout_toRightOf="@+id/secondnumber"
+        android:layout_toEndOf="@+id/secondnumber"
+        android:layout_below="@+id/btnMultiply"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp" />
+
+</RelativeLayout>
